@@ -7,6 +7,7 @@ plugins {
 }
 
 group = "com.neo"
+version = "0.0.4"
 
 java {
     toolchain {
@@ -74,6 +75,17 @@ wsdl2java {
 sourceSets {
     main {
         java.srcDir(generatedWsdlDirectory)
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("mavenJava") {
+            from(components["java"])
+            groupId = "com.github.shahrivari"
+            artifactId = "red-soap"
+            version = "0.0.4"
+        }
     }
 }
 

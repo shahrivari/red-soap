@@ -1,7 +1,7 @@
 import com.yupzip.wsdl2java.Wsdl2JavaTask
 
 plugins {
-    java
+    `java-library`
     id("com.yupzip.wsdl2java") version "3.0.0"
     `maven-publish`
 }
@@ -22,14 +22,14 @@ repositories {
 
 dependencies {
     // The runtime dependencies needed by the generated CXF/JAX-WS stubs
-    implementation("org.apache.cxf:cxf-rt-frontend-jaxws:4.0.0")
-    implementation("org.apache.cxf:cxf-rt-transports-http-hc5:4.0.0")
+    api("org.apache.cxf:cxf-rt-frontend-jaxws:4.0.0")
+    api("org.apache.cxf:cxf-rt-transports-http-hc5:4.0.0")
 
     // If you need Jakarta / JAXB APIs
-    implementation("jakarta.xml.ws:jakarta.xml.ws-api:4.0.0")
-    implementation("jakarta.xml.bind:jakarta.xml.bind-api:4.0.0")
+    api("jakarta.xml.ws:jakarta.xml.ws-api:4.0.0")
+    api("jakarta.xml.bind:jakarta.xml.bind-api:4.0.0")
 
-    implementation("com.sun.xml.bind:jaxb-impl:4.0.1")
+    api("com.sun.xml.bind:jaxb-impl:4.0.1")
 
     // Dependencies for the code-generation task itself
     // The plugin provides a “wsdl2java” configuration for this

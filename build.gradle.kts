@@ -3,6 +3,7 @@ import com.yupzip.wsdl2java.Wsdl2JavaTask
 plugins {
     java
     id("com.yupzip.wsdl2java") version "3.0.0"
+    `maven-publish`
 }
 
 group = "com.neo"

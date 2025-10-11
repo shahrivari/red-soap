@@ -40,13 +40,13 @@
     </wsp:Policy>
     <wsdl:types>
         <xsd:schema targetNamespace="http://tempuri.org/Imports">
-            <xsd:import schemaLocation="http://core.inquiry.ayantech.ir/webservices/Core.svc?xsd=xsd0"
+            <xsd:import schemaLocation="https://core.inquiry.ayantech.ir/webservices/Core.svc?xsd=xsd0"
                         namespace="http://tempuri.org/"/>
-            <xsd:import schemaLocation="http://core.inquiry.ayantech.ir/webservices/Core.svc?xsd=xsd1"
+            <xsd:import schemaLocation="https://core.inquiry.ayantech.ir/webservices/Core.svc?xsd=xsd1"
                         namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
-            <xsd:import schemaLocation="http://core.inquiry.ayantech.ir/webservices/Core.svc?xsd=xsd2"
+            <xsd:import schemaLocation="https://core.inquiry.ayantech.ir/webservices/Core.svc?xsd=xsd2"
                         namespace="http://schemas.datacontract.org/2004/07/Core"/>
-            <xsd:import schemaLocation="http://core.inquiry.ayantech.ir/webservices/Core.svc?xsd=xsd3"
+            <xsd:import schemaLocation="https://core.inquiry.ayantech.ir/webservices/Core.svc?xsd=xsd3"
                         namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
         </xsd:schema>
     </wsdl:types>
@@ -4800,7 +4800,7 @@
             <soap:address location="http://core.inquiry.ayantech.ir/webservices/Core.svc/soap"/>
         </wsdl:port>
         <wsdl:port name="SecureSoap" binding="tns:SecureSoap">
-            <soap:address location="https://core4.inquiry.ayantech.ir/webservices/Core.svc/soap"/>
+            <soap:address location="https://core.inquiry.ayantech.ir/webservices/Core.svc/soap"/>
         </wsdl:port>
     </wsdl:service>
 </wsdl:definitions>

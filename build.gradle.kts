@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.neo"
-version = "0.0.4"
+version = "0.0.5"
 
 java {
     toolchain {
@@ -84,7 +84,7 @@ publishing {
             from(components["java"])
             groupId = "com.github.shahrivari"
             artifactId = "red-soap"
-            version = "0.0.4"
+            version = "0.0.5"
         }
     }
 }

@@ -8,22 +8,20 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for ElectronicPrescriptionInquiryInputParams complex type.
+ * <p>Java class for TaminUnderCoveredInquiryInputParams complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ElectronicPrescriptionInquiryInputParams"&gt;
+ * &lt;complexType name="TaminUnderCoveredInquiryInputParams"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="MobileNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="Password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="TraceNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="UnderCoveredNationalID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="UserName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="ViewerUniqueID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="Year" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -33,16 +31,14 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ElectronicPrescriptionInquiryInputParams", propOrder = {
+@XmlType(name = "TaminUnderCoveredInquiryInputParams", propOrder = {
     "mobileNumber",
     "password",
     "traceNumber",
-    "underCoveredNationalID",
     "userName",
-    "viewerUniqueID",
-    "year"
+    "viewerUniqueID"
 })
-public class ElectronicPrescriptionInquiryInputParams {
+public class TaminUnderCoveredInquiryInputParams {
 
     @XmlElement(name = "MobileNumber", nillable = true)
     protected String mobileNumber;
@@ -50,14 +46,10 @@ public class ElectronicPrescriptionInquiryInputParams {
     protected String password;
     @XmlElement(name = "TraceNumber", nillable = true)
     protected String traceNumber;
-    @XmlElement(name = "UnderCoveredNationalID", nillable = true)
-    protected String underCoveredNationalID;
     @XmlElement(name = "UserName", nillable = true)
     protected String userName;
     @XmlElement(name = "ViewerUniqueID", nillable = true)
     protected String viewerUniqueID;
-    @XmlElement(name = "Year", nillable = true)
-    protected String year;
 
     /**
      * Gets the value of the mobileNumber property.
@@ -132,30 +124,6 @@ public class ElectronicPrescriptionInquiryInputParams {
     }
 
     /**
-     * Gets the value of the underCoveredNationalID property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUnderCoveredNationalID() {
-        return underCoveredNationalID;
-    }
-
-    /**
-     * Sets the value of the underCoveredNationalID property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUnderCoveredNationalID(String value) {
-        this.underCoveredNationalID = value;
-    }
-
-    /**
      * Gets the value of the userName property.
      * 
      * @return
@@ -201,30 +169,6 @@ public class ElectronicPrescriptionInquiryInputParams {
      */
     public void setViewerUniqueID(String value) {
         this.viewerUniqueID = value;
-    }
-
-    /**
-     * Gets the value of the year property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getYear() {
-        return year;
-    }
-
-    /**
-     * Sets the value of the year property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setYear(String value) {
-        this.year = value;
     }
 
 }

@@ -86,6 +86,12 @@ public class ObjectFactory {
     private final static QName _TaminHistoryInquiryDetailOutputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "TaminHistoryInquiryDetailOutputParams");
     private final static QName _ArrayOfTaminHistoryDaysAndWage_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ArrayOfTaminHistoryDaysAndWage");
     private final static QName _TaminHistoryDaysAndWage_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "TaminHistoryDaysAndWage");
+    private final static QName _TaminUnderCoveredInquiryInput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "TaminUnderCoveredInquiryInput");
+    private final static QName _TaminUnderCoveredInquiryInputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "TaminUnderCoveredInquiryInputParams");
+    private final static QName _TaminUnderCoveredInquiryOutput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "TaminUnderCoveredInquiryOutput");
+    private final static QName _TaminUnderCoveredInquiryOutputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "TaminUnderCoveredInquiryOutputParams");
+    private final static QName _ArrayOfTaminUnderCoveredInquiryDetailResult_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ArrayOfTaminUnderCoveredInquiryDetailResult");
+    private final static QName _TaminUnderCoveredInquiryDetailResult_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "TaminUnderCoveredInquiryDetailResult");
     private final static QName _TehranMunicipalityPaymentInfoCallBackResultInput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "TehranMunicipalityPaymentInfoCallBackResultInput");
     private final static QName _TehranMunicipalityPaymentInfoCallBackResultInputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "TehranMunicipalityPaymentInfoCallBackResultInputParams");
     private final static QName _TehranMunicipalityPaymentInfoCallBackResultOutput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "TehranMunicipalityPaymentInfoCallBackResultOutput");
@@ -1016,6 +1022,38 @@ public class ObjectFactory {
      */
     public TaminHistoryInquiryOutput createTaminHistoryInquiryOutput() {
         return new TaminHistoryInquiryOutput();
+    }
+
+    /**
+     * Create an instance of {@link TaminUnderCoveredInquiry }
+     * 
+     */
+    public TaminUnderCoveredInquiry createTaminUnderCoveredInquiry() {
+        return new TaminUnderCoveredInquiry();
+    }
+
+    /**
+     * Create an instance of {@link TaminUnderCoveredInquiryInput }
+     * 
+     */
+    public TaminUnderCoveredInquiryInput createTaminUnderCoveredInquiryInput() {
+        return new TaminUnderCoveredInquiryInput();
+    }
+
+    /**
+     * Create an instance of {@link TaminUnderCoveredInquiryResponse }
+     * 
+     */
+    public TaminUnderCoveredInquiryResponse createTaminUnderCoveredInquiryResponse() {
+        return new TaminUnderCoveredInquiryResponse();
+    }
+
+    /**
+     * Create an instance of {@link TaminUnderCoveredInquiryOutput }
+     * 
+     */
+    public TaminUnderCoveredInquiryOutput createTaminUnderCoveredInquiryOutput() {
+        return new TaminUnderCoveredInquiryOutput();
     }
 
     /**
@@ -5963,6 +6001,38 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link TaminUnderCoveredInquiryInputParams }
+     * 
+     */
+    public TaminUnderCoveredInquiryInputParams createTaminUnderCoveredInquiryInputParams() {
+        return new TaminUnderCoveredInquiryInputParams();
+    }
+
+    /**
+     * Create an instance of {@link TaminUnderCoveredInquiryOutputParams }
+     * 
+     */
+    public TaminUnderCoveredInquiryOutputParams createTaminUnderCoveredInquiryOutputParams() {
+        return new TaminUnderCoveredInquiryOutputParams();
+    }
+
+    /**
+     * Create an instance of {@link ArrayOfTaminUnderCoveredInquiryDetailResult }
+     * 
+     */
+    public ArrayOfTaminUnderCoveredInquiryDetailResult createArrayOfTaminUnderCoveredInquiryDetailResult() {
+        return new ArrayOfTaminUnderCoveredInquiryDetailResult();
+    }
+
+    /**
+     * Create an instance of {@link TaminUnderCoveredInquiryDetailResult }
+     * 
+     */
+    public TaminUnderCoveredInquiryDetailResult createTaminUnderCoveredInquiryDetailResult() {
+        return new TaminUnderCoveredInquiryDetailResult();
+    }
+
+    /**
      * Create an instance of {@link TehranMunicipalityPaymentInfoCallBackResultInputParams }
      * 
      */
@@ -10146,6 +10216,84 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "TaminHistoryDaysAndWage")
     public JAXBElement<TaminHistoryDaysAndWage> createTaminHistoryDaysAndWage(TaminHistoryDaysAndWage value) {
         return new JAXBElement<TaminHistoryDaysAndWage>(_TaminHistoryDaysAndWage_QNAME, TaminHistoryDaysAndWage.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TaminUnderCoveredInquiryInput }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link TaminUnderCoveredInquiryInput }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "TaminUnderCoveredInquiryInput")
+    public JAXBElement<TaminUnderCoveredInquiryInput> createTaminUnderCoveredInquiryInput(TaminUnderCoveredInquiryInput value) {
+        return new JAXBElement<TaminUnderCoveredInquiryInput>(_TaminUnderCoveredInquiryInput_QNAME, TaminUnderCoveredInquiryInput.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TaminUnderCoveredInquiryInputParams }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link TaminUnderCoveredInquiryInputParams }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "TaminUnderCoveredInquiryInputParams")
+    public JAXBElement<TaminUnderCoveredInquiryInputParams> createTaminUnderCoveredInquiryInputParams(TaminUnderCoveredInquiryInputParams value) {
+        return new JAXBElement<TaminUnderCoveredInquiryInputParams>(_TaminUnderCoveredInquiryInputParams_QNAME, TaminUnderCoveredInquiryInputParams.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TaminUnderCoveredInquiryOutput }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link TaminUnderCoveredInquiryOutput }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "TaminUnderCoveredInquiryOutput")
+    public JAXBElement<TaminUnderCoveredInquiryOutput> createTaminUnderCoveredInquiryOutput(TaminUnderCoveredInquiryOutput value) {
+        return new JAXBElement<TaminUnderCoveredInquiryOutput>(_TaminUnderCoveredInquiryOutput_QNAME, TaminUnderCoveredInquiryOutput.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TaminUnderCoveredInquiryOutputParams }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link TaminUnderCoveredInquiryOutputParams }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "TaminUnderCoveredInquiryOutputParams")
+    public JAXBElement<TaminUnderCoveredInquiryOutputParams> createTaminUnderCoveredInquiryOutputParams(TaminUnderCoveredInquiryOutputParams value) {
+        return new JAXBElement<TaminUnderCoveredInquiryOutputParams>(_TaminUnderCoveredInquiryOutputParams_QNAME, TaminUnderCoveredInquiryOutputParams.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfTaminUnderCoveredInquiryDetailResult }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ArrayOfTaminUnderCoveredInquiryDetailResult }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ArrayOfTaminUnderCoveredInquiryDetailResult")
+    public JAXBElement<ArrayOfTaminUnderCoveredInquiryDetailResult> createArrayOfTaminUnderCoveredInquiryDetailResult(ArrayOfTaminUnderCoveredInquiryDetailResult value) {
+        return new JAXBElement<ArrayOfTaminUnderCoveredInquiryDetailResult>(_ArrayOfTaminUnderCoveredInquiryDetailResult_QNAME, ArrayOfTaminUnderCoveredInquiryDetailResult.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link TaminUnderCoveredInquiryDetailResult }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link TaminUnderCoveredInquiryDetailResult }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "TaminUnderCoveredInquiryDetailResult")
+    public JAXBElement<TaminUnderCoveredInquiryDetailResult> createTaminUnderCoveredInquiryDetailResult(TaminUnderCoveredInquiryDetailResult value) {
+        return new JAXBElement<TaminUnderCoveredInquiryDetailResult>(_TaminUnderCoveredInquiryDetailResult_QNAME, TaminUnderCoveredInquiryDetailResult.class, null, value);
     }
 
     /**

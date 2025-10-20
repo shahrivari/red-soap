@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.neo"
-version = "0.0.6"
+version = "0.0.7"
 
 java {
     toolchain {
@@ -65,7 +65,7 @@ wsdl2java {
             "-autoNameResolution",
             "-p", "com.neo.redSoap.ghabzino",
             "-verbose",
-            // the actual WSDL path (relative to wsdlDir or absolute)
+            "-wsdlLocation", "ghabzino.wsdl",
             "$wsdlDir/ghabzino.wsdl",
         )
     )
@@ -84,7 +84,7 @@ publishing {
             from(components["java"])
             groupId = "com.github.shahrivari"
             artifactId = "red-soap"
-            version = "0.0.6"
+            version = "0.0.7"
         }
     }
 }

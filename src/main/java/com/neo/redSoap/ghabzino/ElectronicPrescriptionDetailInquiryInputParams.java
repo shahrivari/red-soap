@@ -22,6 +22,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         &lt;element name="MobileNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="Password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="TraceNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UnderCoveredNationalID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="UserName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="ViewerUniqueID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
@@ -39,6 +40,7 @@ import jakarta.xml.bind.annotation.XmlType;
     "mobileNumber",
     "password",
     "traceNumber",
+    "underCoveredNationalID",
     "userName",
     "viewerUniqueID"
 })
@@ -54,6 +56,8 @@ public class ElectronicPrescriptionDetailInquiryInputParams {
     protected String password;
     @XmlElement(name = "TraceNumber", nillable = true)
     protected String traceNumber;
+    @XmlElement(name = "UnderCoveredNationalID", nillable = true)
+    protected String underCoveredNationalID;
     @XmlElement(name = "UserName", nillable = true)
     protected String userName;
     @XmlElement(name = "ViewerUniqueID", nillable = true)
@@ -177,6 +181,30 @@ public class ElectronicPrescriptionDetailInquiryInputParams {
      */
     public void setTraceNumber(String value) {
         this.traceNumber = value;
+    }
+
+    /**
+     * Gets the value of the underCoveredNationalID property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getUnderCoveredNationalID() {
+        return underCoveredNationalID;
+    }
+
+    /**
+     * Sets the value of the underCoveredNationalID property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setUnderCoveredNationalID(String value) {
+        this.underCoveredNationalID = value;
     }
 
     /**

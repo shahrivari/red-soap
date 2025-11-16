@@ -8,17 +8,17 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for ReportNewBillPaymentInput complex type.
+ * <p>Java class for ReportNewGeneralPaymentDirectIpgByMasterWalletInput complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ReportNewBillPaymentInput"&gt;
+ * &lt;complexType name="ReportNewGeneralPaymentDirectIpgByMasterWalletInput"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="Identity" type="{http://schemas.datacontract.org/2004/07/Core}WebServiceIdentity" minOccurs="0"/&gt;
- *         &lt;element name="Parameters" type="{http://schemas.datacontract.org/2004/07/Core}ReportNewBillPaymentInputParams" minOccurs="0"/&gt;
+ *         &lt;element name="Parameters" type="{http://schemas.datacontract.org/2004/07/Core}ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -28,16 +28,16 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ReportNewBillPaymentInput", propOrder = {
+@XmlType(name = "ReportNewGeneralPaymentDirectIpgByMasterWalletInput", propOrder = {
     "identity",
     "parameters"
 })
-public class ReportNewBillPaymentInput {
+public class ReportNewGeneralPaymentDirectIpgByMasterWalletInput {
 
     @XmlElement(name = "Identity", nillable = true)
     protected WebServiceIdentity identity;
     @XmlElement(name = "Parameters", nillable = true)
-    protected ReportNewBillPaymentInputParams parameters;
+    protected ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams parameters;
 
     /**
      * Gets the value of the identity property.
@@ -68,10 +68,10 @@ public class ReportNewBillPaymentInput {
      * 
      * @return
      *     possible object is
-     *     {@link ReportNewBillPaymentInputParams }
+     *     {@link ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams }
      *     
      */
-    public ReportNewBillPaymentInputParams getParameters() {
+    public ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams getParameters() {
         return parameters;
     }
 
@@ -80,10 +80,10 @@ public class ReportNewBillPaymentInput {
      * 
      * @param value
      *     allowed object is
-     *     {@link ReportNewBillPaymentInputParams }
+     *     {@link ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams }
      *     
      */
-    public void setParameters(ReportNewBillPaymentInputParams value) {
+    public void setParameters(ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams value) {
         this.parameters = value;
     }
 

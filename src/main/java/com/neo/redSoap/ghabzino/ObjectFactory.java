@@ -721,18 +721,14 @@ public class ObjectFactory {
     private final static QName _RealEstateTransactionsInquiryInputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "RealEstateTransactionsInquiryInputParams");
     private final static QName _RealEstateTransactionsInquiryOutput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "RealEstateTransactionsInquiryOutput");
     private final static QName _RealEstateTransactionsInquiryOutputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "RealEstateTransactionsInquiryOutputParams");
-    private final static QName _ReportNewBillPaymentInput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewBillPaymentInput");
-    private final static QName _ReportNewBillPaymentInputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewBillPaymentInputParams");
-    private final static QName _ArrayOfReportNewBillParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ArrayOfReportNewBillParams");
-    private final static QName _ReportNewBillParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewBillParams");
-    private final static QName _ReportNewBillPaymentOutput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewBillPaymentOutput");
-    private final static QName _ReportNewBillPaymentOutputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewBillPaymentOutputParams");
-    private final static QName _ArrayOfReportNewPaymentBill_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ArrayOfReportNewPaymentBill");
-    private final static QName _ReportNewPaymentBill_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewPaymentBill");
     private final static QName _ReportNewBillPaymentByMasterWalletInput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewBillPaymentByMasterWalletInput");
     private final static QName _ReportNewBillPaymentByMasterWalletInputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewBillPaymentByMasterWalletInputParams");
     private final static QName _ReportNewBillPaymentByMasterWalletOutput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewBillPaymentByMasterWalletOutput");
     private final static QName _ReportNewBillPaymentByMasterWalletOutputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewBillPaymentByMasterWalletOutputParams");
+    private final static QName _ReportNewGeneralPaymentDirectIpgByMasterWalletInput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewGeneralPaymentDirectIpgByMasterWalletInput");
+    private final static QName _ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams");
+    private final static QName _ReportNewGeneralPaymentDirectIpgByMasterWalletOutput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewGeneralPaymentDirectIpgByMasterWalletOutput");
+    private final static QName _ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams");
     private final static QName _ReportNewCarAnnualTaxPaymentByMasterWalletInput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewCarAnnualTaxPaymentByMasterWalletInput");
     private final static QName _ReportNewCarAnnualTaxPaymentByMasterWalletInputParams_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewCarAnnualTaxPaymentByMasterWalletInputParams");
     private final static QName _ReportNewCarAnnualTaxPaymentByMasterWalletOutput_QNAME = new QName("http://schemas.datacontract.org/2004/07/Core", "ReportNewCarAnnualTaxPaymentByMasterWalletOutput");
@@ -5169,38 +5165,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReportNewBillPayment }
-     * 
-     */
-    public ReportNewBillPayment createReportNewBillPayment() {
-        return new ReportNewBillPayment();
-    }
-
-    /**
-     * Create an instance of {@link ReportNewBillPaymentInput }
-     * 
-     */
-    public ReportNewBillPaymentInput createReportNewBillPaymentInput() {
-        return new ReportNewBillPaymentInput();
-    }
-
-    /**
-     * Create an instance of {@link ReportNewBillPaymentResponse }
-     * 
-     */
-    public ReportNewBillPaymentResponse createReportNewBillPaymentResponse() {
-        return new ReportNewBillPaymentResponse();
-    }
-
-    /**
-     * Create an instance of {@link ReportNewBillPaymentOutput }
-     * 
-     */
-    public ReportNewBillPaymentOutput createReportNewBillPaymentOutput() {
-        return new ReportNewBillPaymentOutput();
-    }
-
-    /**
      * Create an instance of {@link ReportNewBillPaymentByMasterWallet }
      * 
      */
@@ -5230,6 +5194,38 @@ public class ObjectFactory {
      */
     public ReportNewBillPaymentByMasterWalletOutput createReportNewBillPaymentByMasterWalletOutput() {
         return new ReportNewBillPaymentByMasterWalletOutput();
+    }
+
+    /**
+     * Create an instance of {@link ReportNewGeneralPaymentDirectIpgByMasterWallet }
+     * 
+     */
+    public ReportNewGeneralPaymentDirectIpgByMasterWallet createReportNewGeneralPaymentDirectIpgByMasterWallet() {
+        return new ReportNewGeneralPaymentDirectIpgByMasterWallet();
+    }
+
+    /**
+     * Create an instance of {@link ReportNewGeneralPaymentDirectIpgByMasterWalletInput }
+     * 
+     */
+    public ReportNewGeneralPaymentDirectIpgByMasterWalletInput createReportNewGeneralPaymentDirectIpgByMasterWalletInput() {
+        return new ReportNewGeneralPaymentDirectIpgByMasterWalletInput();
+    }
+
+    /**
+     * Create an instance of {@link ReportNewGeneralPaymentDirectIpgByMasterWalletResponse }
+     * 
+     */
+    public ReportNewGeneralPaymentDirectIpgByMasterWalletResponse createReportNewGeneralPaymentDirectIpgByMasterWalletResponse() {
+        return new ReportNewGeneralPaymentDirectIpgByMasterWalletResponse();
+    }
+
+    /**
+     * Create an instance of {@link ReportNewGeneralPaymentDirectIpgByMasterWalletOutput }
+     * 
+     */
+    public ReportNewGeneralPaymentDirectIpgByMasterWalletOutput createReportNewGeneralPaymentDirectIpgByMasterWalletOutput() {
+        return new ReportNewGeneralPaymentDirectIpgByMasterWalletOutput();
     }
 
     /**
@@ -9017,54 +9013,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReportNewBillPaymentInputParams }
-     * 
-     */
-    public ReportNewBillPaymentInputParams createReportNewBillPaymentInputParams() {
-        return new ReportNewBillPaymentInputParams();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfReportNewBillParams }
-     * 
-     */
-    public ArrayOfReportNewBillParams createArrayOfReportNewBillParams() {
-        return new ArrayOfReportNewBillParams();
-    }
-
-    /**
-     * Create an instance of {@link ReportNewBillParams }
-     * 
-     */
-    public ReportNewBillParams createReportNewBillParams() {
-        return new ReportNewBillParams();
-    }
-
-    /**
-     * Create an instance of {@link ReportNewBillPaymentOutputParams }
-     * 
-     */
-    public ReportNewBillPaymentOutputParams createReportNewBillPaymentOutputParams() {
-        return new ReportNewBillPaymentOutputParams();
-    }
-
-    /**
-     * Create an instance of {@link ArrayOfReportNewPaymentBill }
-     * 
-     */
-    public ArrayOfReportNewPaymentBill createArrayOfReportNewPaymentBill() {
-        return new ArrayOfReportNewPaymentBill();
-    }
-
-    /**
-     * Create an instance of {@link ReportNewPaymentBill }
-     * 
-     */
-    public ReportNewPaymentBill createReportNewPaymentBill() {
-        return new ReportNewPaymentBill();
-    }
-
-    /**
      * Create an instance of {@link ReportNewBillPaymentByMasterWalletInputParams }
      * 
      */
@@ -9078,6 +9026,22 @@ public class ObjectFactory {
      */
     public ReportNewBillPaymentByMasterWalletOutputParams createReportNewBillPaymentByMasterWalletOutputParams() {
         return new ReportNewBillPaymentByMasterWalletOutputParams();
+    }
+
+    /**
+     * Create an instance of {@link ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams }
+     * 
+     */
+    public ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams createReportNewGeneralPaymentDirectIpgByMasterWalletInputParams() {
+        return new ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams();
+    }
+
+    /**
+     * Create an instance of {@link ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams }
+     * 
+     */
+    public ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams createReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams() {
+        return new ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams();
     }
 
     /**
@@ -18474,110 +18438,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewBillPaymentInput }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link ReportNewBillPaymentInput }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewBillPaymentInput")
-    public JAXBElement<ReportNewBillPaymentInput> createReportNewBillPaymentInput(ReportNewBillPaymentInput value) {
-        return new JAXBElement<ReportNewBillPaymentInput>(_ReportNewBillPaymentInput_QNAME, ReportNewBillPaymentInput.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewBillPaymentInputParams }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link ReportNewBillPaymentInputParams }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewBillPaymentInputParams")
-    public JAXBElement<ReportNewBillPaymentInputParams> createReportNewBillPaymentInputParams(ReportNewBillPaymentInputParams value) {
-        return new JAXBElement<ReportNewBillPaymentInputParams>(_ReportNewBillPaymentInputParams_QNAME, ReportNewBillPaymentInputParams.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfReportNewBillParams }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link ArrayOfReportNewBillParams }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ArrayOfReportNewBillParams")
-    public JAXBElement<ArrayOfReportNewBillParams> createArrayOfReportNewBillParams(ArrayOfReportNewBillParams value) {
-        return new JAXBElement<ArrayOfReportNewBillParams>(_ArrayOfReportNewBillParams_QNAME, ArrayOfReportNewBillParams.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewBillParams }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link ReportNewBillParams }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewBillParams")
-    public JAXBElement<ReportNewBillParams> createReportNewBillParams(ReportNewBillParams value) {
-        return new JAXBElement<ReportNewBillParams>(_ReportNewBillParams_QNAME, ReportNewBillParams.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewBillPaymentOutput }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link ReportNewBillPaymentOutput }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewBillPaymentOutput")
-    public JAXBElement<ReportNewBillPaymentOutput> createReportNewBillPaymentOutput(ReportNewBillPaymentOutput value) {
-        return new JAXBElement<ReportNewBillPaymentOutput>(_ReportNewBillPaymentOutput_QNAME, ReportNewBillPaymentOutput.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewBillPaymentOutputParams }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link ReportNewBillPaymentOutputParams }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewBillPaymentOutputParams")
-    public JAXBElement<ReportNewBillPaymentOutputParams> createReportNewBillPaymentOutputParams(ReportNewBillPaymentOutputParams value) {
-        return new JAXBElement<ReportNewBillPaymentOutputParams>(_ReportNewBillPaymentOutputParams_QNAME, ReportNewBillPaymentOutputParams.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfReportNewPaymentBill }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link ArrayOfReportNewPaymentBill }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ArrayOfReportNewPaymentBill")
-    public JAXBElement<ArrayOfReportNewPaymentBill> createArrayOfReportNewPaymentBill(ArrayOfReportNewPaymentBill value) {
-        return new JAXBElement<ArrayOfReportNewPaymentBill>(_ArrayOfReportNewPaymentBill_QNAME, ArrayOfReportNewPaymentBill.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewPaymentBill }{@code >}
-     * 
-     * @param value
-     *     Java instance representing xml element's value.
-     * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link ReportNewPaymentBill }{@code >}
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewPaymentBill")
-    public JAXBElement<ReportNewPaymentBill> createReportNewPaymentBill(ReportNewPaymentBill value) {
-        return new JAXBElement<ReportNewPaymentBill>(_ReportNewPaymentBill_QNAME, ReportNewPaymentBill.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewBillPaymentByMasterWalletInput }{@code >}
      * 
      * @param value
@@ -18627,6 +18487,58 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewBillPaymentByMasterWalletOutputParams")
     public JAXBElement<ReportNewBillPaymentByMasterWalletOutputParams> createReportNewBillPaymentByMasterWalletOutputParams(ReportNewBillPaymentByMasterWalletOutputParams value) {
         return new JAXBElement<ReportNewBillPaymentByMasterWalletOutputParams>(_ReportNewBillPaymentByMasterWalletOutputParams_QNAME, ReportNewBillPaymentByMasterWalletOutputParams.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewGeneralPaymentDirectIpgByMasterWalletInput }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ReportNewGeneralPaymentDirectIpgByMasterWalletInput }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewGeneralPaymentDirectIpgByMasterWalletInput")
+    public JAXBElement<ReportNewGeneralPaymentDirectIpgByMasterWalletInput> createReportNewGeneralPaymentDirectIpgByMasterWalletInput(ReportNewGeneralPaymentDirectIpgByMasterWalletInput value) {
+        return new JAXBElement<ReportNewGeneralPaymentDirectIpgByMasterWalletInput>(_ReportNewGeneralPaymentDirectIpgByMasterWalletInput_QNAME, ReportNewGeneralPaymentDirectIpgByMasterWalletInput.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams")
+    public JAXBElement<ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams> createReportNewGeneralPaymentDirectIpgByMasterWalletInputParams(ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams value) {
+        return new JAXBElement<ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams>(_ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams_QNAME, ReportNewGeneralPaymentDirectIpgByMasterWalletInputParams.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewGeneralPaymentDirectIpgByMasterWalletOutput }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ReportNewGeneralPaymentDirectIpgByMasterWalletOutput }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewGeneralPaymentDirectIpgByMasterWalletOutput")
+    public JAXBElement<ReportNewGeneralPaymentDirectIpgByMasterWalletOutput> createReportNewGeneralPaymentDirectIpgByMasterWalletOutput(ReportNewGeneralPaymentDirectIpgByMasterWalletOutput value) {
+        return new JAXBElement<ReportNewGeneralPaymentDirectIpgByMasterWalletOutput>(_ReportNewGeneralPaymentDirectIpgByMasterWalletOutput_QNAME, ReportNewGeneralPaymentDirectIpgByMasterWalletOutput.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/Core", name = "ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams")
+    public JAXBElement<ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams> createReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams(ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams value) {
+        return new JAXBElement<ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams>(_ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams_QNAME, ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams.class, null, value);
     }
 
     /**

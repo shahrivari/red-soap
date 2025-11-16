@@ -8,16 +8,16 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for ReportNewBillPaymentOutput complex type.
+ * <p>Java class for ReportNewGeneralPaymentDirectIpgByMasterWalletOutput complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ReportNewBillPaymentOutput"&gt;
+ * &lt;complexType name="ReportNewGeneralPaymentDirectIpgByMasterWalletOutput"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="Parameters" type="{http://schemas.datacontract.org/2004/07/Core}ReportNewBillPaymentOutputParams" minOccurs="0"/&gt;
+ *         &lt;element name="Parameters" type="{http://schemas.datacontract.org/2004/07/Core}ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams" minOccurs="0"/&gt;
  *         &lt;element name="Status" type="{http://schemas.datacontract.org/2004/07/Core}WebServiceStatus" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -28,14 +28,14 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ReportNewBillPaymentOutput", propOrder = {
+@XmlType(name = "ReportNewGeneralPaymentDirectIpgByMasterWalletOutput", propOrder = {
     "parameters",
     "status"
 })
-public class ReportNewBillPaymentOutput {
+public class ReportNewGeneralPaymentDirectIpgByMasterWalletOutput {
 
     @XmlElement(name = "Parameters", nillable = true)
-    protected ReportNewBillPaymentOutputParams parameters;
+    protected ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams parameters;
     @XmlElement(name = "Status", nillable = true)
     protected WebServiceStatus status;
 
@@ -44,10 +44,10 @@ public class ReportNewBillPaymentOutput {
      * 
      * @return
      *     possible object is
-     *     {@link ReportNewBillPaymentOutputParams }
+     *     {@link ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams }
      *     
      */
-    public ReportNewBillPaymentOutputParams getParameters() {
+    public ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams getParameters() {
         return parameters;
     }
 
@@ -56,10 +56,10 @@ public class ReportNewBillPaymentOutput {
      * 
      * @param value
      *     allowed object is
-     *     {@link ReportNewBillPaymentOutputParams }
+     *     {@link ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams }
      *     
      */
-    public void setParameters(ReportNewBillPaymentOutputParams value) {
+    public void setParameters(ReportNewGeneralPaymentDirectIpgByMasterWalletOutputParams value) {
         this.parameters = value;
     }
 

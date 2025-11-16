@@ -18,7 +18,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="ws" type="{http://schemas.datacontract.org/2004/07/Core}ReportNewBillPaymentInput" minOccurs="0"/&gt;
+ *         &lt;element name="ws" type="{http://schemas.datacontract.org/2004/07/Core}ReportNewGeneralPaymentDirectIpgByMasterWalletInput" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -31,21 +31,21 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "ws"
 })
-@XmlRootElement(name = "ReportNewBillPayment", namespace = "http://tempuri.org/")
-public class ReportNewBillPayment {
+@XmlRootElement(name = "ReportNewGeneralPaymentDirectIpgByMasterWallet", namespace = "http://tempuri.org/")
+public class ReportNewGeneralPaymentDirectIpgByMasterWallet {
 
     @XmlElement(namespace = "http://tempuri.org/", nillable = true)
-    protected ReportNewBillPaymentInput ws;
+    protected ReportNewGeneralPaymentDirectIpgByMasterWalletInput ws;
 
     /**
      * Gets the value of the ws property.
      * 
      * @return
      *     possible object is
-     *     {@link ReportNewBillPaymentInput }
+     *     {@link ReportNewGeneralPaymentDirectIpgByMasterWalletInput }
      *     
      */
-    public ReportNewBillPaymentInput getWs() {
+    public ReportNewGeneralPaymentDirectIpgByMasterWalletInput getWs() {
         return ws;
     }
 
@@ -54,10 +54,10 @@ public class ReportNewBillPayment {
      * 
      * @param value
      *     allowed object is
-     *     {@link ReportNewBillPaymentInput }
+     *     {@link ReportNewGeneralPaymentDirectIpgByMasterWalletInput }
      *     
      */
-    public void setWs(ReportNewBillPaymentInput value) {
+    public void setWs(ReportNewGeneralPaymentDirectIpgByMasterWalletInput value) {
         this.ws = value;
     }
 

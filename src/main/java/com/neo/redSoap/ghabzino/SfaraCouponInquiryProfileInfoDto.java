@@ -19,12 +19,15 @@ import jakarta.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="BirthDay" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="City" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="DahakLevel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="FatherName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="FirstName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="LastName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="MobileNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="NationalCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SadakLevel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="Size" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="YaranehStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -37,12 +40,15 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlType(name = "SfaraCouponInquiryProfileInfoDto", propOrder = {
     "birthDay",
     "city",
+    "dahakLevel",
     "fatherName",
     "firstName",
     "lastName",
     "mobileNumber",
     "nationalCode",
-    "size"
+    "sadakLevel",
+    "size",
+    "yaranehStatus"
 })
 public class SfaraCouponInquiryProfileInfoDto {
 
@@ -50,6 +56,8 @@ public class SfaraCouponInquiryProfileInfoDto {
     protected String birthDay;
     @XmlElement(name = "City", nillable = true)
     protected String city;
+    @XmlElement(name = "DahakLevel", nillable = true)
+    protected String dahakLevel;
     @XmlElement(name = "FatherName", nillable = true)
     protected String fatherName;
     @XmlElement(name = "FirstName", nillable = true)
@@ -60,8 +68,12 @@ public class SfaraCouponInquiryProfileInfoDto {
     protected String mobileNumber;
     @XmlElement(name = "NationalCode", nillable = true)
     protected String nationalCode;
+    @XmlElement(name = "SadakLevel", nillable = true)
+    protected String sadakLevel;
     @XmlElement(name = "Size")
     protected Long size;
+    @XmlElement(name = "YaranehStatus", nillable = true)
+    protected String yaranehStatus;
 
     /**
      * Gets the value of the birthDay property.
@@ -109,6 +121,30 @@ public class SfaraCouponInquiryProfileInfoDto {
      */
     public void setCity(String value) {
         this.city = value;
+    }
+
+    /**
+     * Gets the value of the dahakLevel property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDahakLevel() {
+        return dahakLevel;
+    }
+
+    /**
+     * Sets the value of the dahakLevel property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDahakLevel(String value) {
+        this.dahakLevel = value;
     }
 
     /**
@@ -232,6 +268,30 @@ public class SfaraCouponInquiryProfileInfoDto {
     }
 
     /**
+     * Gets the value of the sadakLevel property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSadakLevel() {
+        return sadakLevel;
+    }
+
+    /**
+     * Sets the value of the sadakLevel property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSadakLevel(String value) {
+        this.sadakLevel = value;
+    }
+
+    /**
      * Gets the value of the size property.
      * 
      * @return
@@ -253,6 +313,30 @@ public class SfaraCouponInquiryProfileInfoDto {
      */
     public void setSize(Long value) {
         this.size = value;
+    }
+
+    /**
+     * Gets the value of the yaranehStatus property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getYaranehStatus() {
+        return yaranehStatus;
+    }
+
+    /**
+     * Sets the value of the yaranehStatus property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setYaranehStatus(String value) {
+        this.yaranehStatus = value;
     }
 
 }

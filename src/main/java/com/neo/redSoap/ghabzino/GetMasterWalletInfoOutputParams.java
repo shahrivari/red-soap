@@ -21,6 +21,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *         &lt;element name="CarAnnualTax" type="{http://schemas.datacontract.org/2004/07/Core}GetMasterWalletInfoDetailResult" minOccurs="0"/&gt;
  *         &lt;element name="CarToll" type="{http://schemas.datacontract.org/2004/07/Core}GetMasterWalletInfoDetailResult" minOccurs="0"/&gt;
  *         &lt;element name="CarTransferTax" type="{http://schemas.datacontract.org/2004/07/Core}GetMasterWalletInfoDetailResult" minOccurs="0"/&gt;
+ *         &lt;element name="GeneralPayment" type="{http://schemas.datacontract.org/2004/07/Core}GetMasterWalletInfoDetailResult" minOccurs="0"/&gt;
  *         &lt;element name="TehranMunicipality" type="{http://schemas.datacontract.org/2004/07/Core}GetMasterWalletInfoDetailResult" minOccurs="0"/&gt;
  *         &lt;element name="TopUp" type="{http://schemas.datacontract.org/2004/07/Core}GetMasterWalletInfoDetailResult" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
@@ -37,6 +38,7 @@ import jakarta.xml.bind.annotation.XmlType;
     "carAnnualTax",
     "carToll",
     "carTransferTax",
+    "generalPayment",
     "tehranMunicipality",
     "topUp"
 })
@@ -50,6 +52,8 @@ public class GetMasterWalletInfoOutputParams {
     protected GetMasterWalletInfoDetailResult carToll;
     @XmlElement(name = "CarTransferTax", nillable = true)
     protected GetMasterWalletInfoDetailResult carTransferTax;
+    @XmlElement(name = "GeneralPayment", nillable = true)
+    protected GetMasterWalletInfoDetailResult generalPayment;
     @XmlElement(name = "TehranMunicipality", nillable = true)
     protected GetMasterWalletInfoDetailResult tehranMunicipality;
     @XmlElement(name = "TopUp", nillable = true)
@@ -149,6 +153,30 @@ public class GetMasterWalletInfoOutputParams {
      */
     public void setCarTransferTax(GetMasterWalletInfoDetailResult value) {
         this.carTransferTax = value;
+    }
+
+    /**
+     * Gets the value of the generalPayment property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link GetMasterWalletInfoDetailResult }
+     *     
+     */
+    public GetMasterWalletInfoDetailResult getGeneralPayment() {
+        return generalPayment;
+    }
+
+    /**
+     * Sets the value of the generalPayment property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link GetMasterWalletInfoDetailResult }
+     *     
+     */
+    public void setGeneralPayment(GetMasterWalletInfoDetailResult value) {
+        this.generalPayment = value;
     }
 
     /**
